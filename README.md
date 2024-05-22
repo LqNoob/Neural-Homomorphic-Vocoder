@@ -24,13 +24,12 @@ python train.py --config config_v1.json
 ```
 
 ## Inference from wav file or for end-to-end speech synthesis
-1. Make `test_files` or `test_mel_files` directory and copy wav files or generated mel-spectrogram files into the directory.
+1. Make `test_files` directory and copy wav files into the directory.
 2. Run the following command.
     ```
     python inference.py --checkpoint_file [generator checkpoint file path]
-    python inference_e2e.py --checkpoint_file [generator checkpoint file path]
     ```
-Generated wav files are saved in `generated_files` or `generated_files_from_mel` by default.<br>
+Generated wav files are saved in `generated_files` by default.<br>
 You can change the path by adding `--output_dir` option.
 
 ## Acknowledgements
